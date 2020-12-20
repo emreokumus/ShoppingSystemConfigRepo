@@ -3,18 +3,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
 
-zuul:
-  prefix: /api
-  ignoredPatterns:  
-    - /api/product-service/**
-    - /api/shopping-card-service/**
-  routes:
-    product-service:
-      path: /** #/api/ bu url'i kullanırız.
-      serviceID: product-service
-      stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
-    shopping-card-service:
-      path: /** #/api/ bu url'i kullanırız.
-      serviceID: shopping-card-service
-      stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
 
