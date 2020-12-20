@@ -18,8 +18,3 @@ zuul:
       serviceID: shopping-card-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
