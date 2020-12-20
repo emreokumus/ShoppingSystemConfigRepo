@@ -13,7 +13,7 @@ zuul:
     product-service:
       path: /product/** #/api/ bu url'i kullanırız.
       url: http://localhost:8082/product-service/product
-      serviceID: product-service
+      #serviceID: product-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
     shopping-card-service:
       path: /card/** #/api/ bu url'i kullanırız.
