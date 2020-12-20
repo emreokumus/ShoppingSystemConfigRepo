@@ -11,10 +11,10 @@ zuul:
     - /api/shopping-card-service/**
   routes:
     product-service:
-      path: /** #/api/ bu url'i kullanırız.
+      path: /p/** #/api/ bu url'i kullanırız.
       serviceID: product-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
-     shopping-card-service:
-      path: /** #/api/ bu url'i kullanırız.
+    shopping-card-service:
+      path: /c/** #/api/ bu url'i kullanırız.
       serviceID: shopping-card-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.  
