@@ -5,8 +5,10 @@ eureka:
 
 zuul:
   prefix: /api
-  ignoredPatterns: '*' #bu pathleri disable ederiz. hepsini etmek içi '*' kullanmalıyız.
-
+  ignoredPatterns:  #bu pathleri disable ederiz. hepsini etmek içi '*' kullanmalıyız.
+    - /api/product-service/**
+    - /api/shopping-card-service/**
+    - /api/config-server/**
   routes:
     product-service:
       path: /product/** #/api/ bu url'i kullanırız.
