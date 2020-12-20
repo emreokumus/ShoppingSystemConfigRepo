@@ -13,6 +13,6 @@ zuul:
       serviceID: product-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
     shopping-card-service:
-      path: /product/** #/api/ bu url'i kullanırız.
+      path: /card/** #/api/ bu url'i kullanırız.
       serviceID: shopping-card-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.
