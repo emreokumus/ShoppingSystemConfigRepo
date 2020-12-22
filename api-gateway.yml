@@ -19,6 +19,6 @@ zuul:
       serviceID: shopping-card-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.  
     zipkin:
-      path: /tracing/*
-      url: http://localhost:9411
+      path: /zipkin/**
+      url: http://localhost:9411/
 
