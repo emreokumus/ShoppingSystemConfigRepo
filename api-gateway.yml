@@ -18,3 +18,7 @@ zuul:
       path: /c/** #/api/ bu url'i kullanırız.
       serviceID: shopping-card-service
       stripPrefix: true #/api prefixini yönlendirdiğimiz servis path'ine ekleme demek.  
+    zipkin:
+      path: /tracing/*
+      url: http://localhost:9411
+
